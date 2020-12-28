@@ -15,8 +15,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView tvMovieTitle = findViewById(R.id.tvMovieTitle);
-        tvMovieTitle.setText("Avatar: The last airbender (2021)");
+//        TextView tvMovieTitle = findViewById(R.id.tvMovieTitle);
+//        tvMovieTitle.setText("Avatar: The last airbender (2021)");
 
         TextView tvMovieInfo = findViewById(R.id.tvMovieInfo);
         tvMovieInfo.setText("Comedy | 120 min");

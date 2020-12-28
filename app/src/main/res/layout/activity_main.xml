@@ -14,18 +14,19 @@
             android:id="@+id/ivMovieHeader"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:contentDescription="Header description"
             app:layout_constraintDimensionRatio="1.77776"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/header"
-            tools:srcCompat="@drawable/header"
-            android:contentDescription="Header description"/>
+            tools:srcCompat="@drawable/header" />
 
         <ImageView
             android:id="@+id/ivMoviePoster"
             android:layout_width="0dp"
             android:layout_height="150dp"
+            android:contentDescription="Poster description"
             app:layout_constraintBottom_toBottomOf="@+id/ivMovieHeader"
             app:layout_constraintDimensionRatio="0.66667"
             app:layout_constraintEnd_toStartOf="@+id/ivMovieHeader"
@@ -34,8 +35,7 @@
             app:layout_constraintTop_toBottomOf="@+id/ivMovieHeader"
             app:layout_constraintVertical_bias="0.486"
             app:srcCompat="@drawable/poster"
-            tools:srcCompat="@drawable/poster"
-            android:contentDescription="Poster description" />
+            tools:srcCompat="@drawable/poster" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/leftGuide"
@@ -57,6 +57,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
+            android:text="@string/avatar_title"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             app:layout_constraintEnd_toStartOf="@+id/rightGuide"
             app:layout_constraintStart_toEndOf="@+id/ivMoviePoster"
@@ -86,11 +87,11 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
+            android:text="Plot summary"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             app:layout_constraintEnd_toStartOf="@+id/rightGuide"
             app:layout_constraintStart_toStartOf="@+id/leftGuide"
-            app:layout_constraintTop_toBottomOf="@+id/barrierMovieHeader"
-            android:text="Plot summary" />
+            app:layout_constraintTop_toBottomOf="@+id/barrierMovieHeader" />
 
         <View
             android:id="@+id/divider"
@@ -105,6 +106,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:text="@string/avatar_plot"
             app:layout_constraintEnd_toStartOf="@+id/rightGuide"
             app:layout_constraintStart_toStartOf="@+id/leftGuide"
             app:layout_constraintTop_toBottomOf="@+id/divider"
