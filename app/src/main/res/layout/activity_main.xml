@@ -55,11 +55,11 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
-            tools:text="Movie title"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             app:layout_constraintEnd_toStartOf="@+id/rightGuide"
             app:layout_constraintStart_toEndOf="@+id/ivMoviePoster"
-            app:layout_constraintTop_toBottomOf="@+id/ivMovieHeader" />
+            app:layout_constraintTop_toBottomOf="@+id/ivMovieHeader"
+            tools:text="Movie title" />
 
         <TextView
             android:id="@+id/tvMovieInfo"
@@ -71,5 +71,41 @@
             app:layout_constraintStart_toEndOf="@+id/ivMoviePoster"
             app:layout_constraintTop_toBottomOf="@+id/tvMovieTitle"
             tools:text="Comedy | 120 min" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrierMovieHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="ivMoviePoster, tvMovieInfo" />
+
+        <TextView
+            android:id="@+id/tvMoviePlot"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            tools:text="Plot summary"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintEnd_toStartOf="@+id/rightGuide"
+            app:layout_constraintStart_toStartOf="@+id/leftGuide"
+            app:layout_constraintTop_toBottomOf="@+id/barrierMovieHeader" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintTop_toBottomOf="@+id/tvMoviePlot" />
+
+        <TextView
+            android:id="@+id/tvPlotText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/rightGuide"
+            app:layout_constraintStart_toStartOf="@+id/leftGuide"
+            app:layout_constraintTop_toBottomOf="@+id/divider"
+            tools:text="This is plot text" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
