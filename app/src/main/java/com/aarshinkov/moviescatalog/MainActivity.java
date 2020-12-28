@@ -22,11 +22,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        TextView tvMovieHeading = findViewById(R.id.tvMovieHeader);
-//        tvMovieHeading.setText("Some text");
-//
-//        TextView tvMovieInfo = findViewById(R.id.tvMovieInfo);
-//        tvMovieInfo.setText("Comedy | 120 min");
+        TextView tvMovieTitle = findViewById(R.id.tvMovieTitle);
+        tvMovieTitle.setText("Avatar: The last airbender (2021)");
+
+        TextView tvMovieInfo = findViewById(R.id.tvMovieInfo);
+        tvMovieInfo.setText("Comedy | 120 min");
 
 //        ImageView movieHeader = findViewById(R.id.imageViewHeader);
 //        final String movieHeaderImageUrl = "https://wallpaperaccess.com/full/2071603.jpg";

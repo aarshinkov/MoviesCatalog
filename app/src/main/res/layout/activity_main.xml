@@ -18,7 +18,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/header" />
+            app:srcCompat="@drawable/header"
+            tools:srcCompat="@drawable/header" />
 
         <ImageView
             android:id="@+id/ivMoviePoster"
@@ -31,6 +32,7 @@
             app:layout_constraintStart_toStartOf="@+id/leftGuide"
             app:layout_constraintTop_toBottomOf="@+id/ivMovieHeader"
             app:layout_constraintVertical_bias="0.486"
+            app:srcCompat="@drawable/poster"
             tools:srcCompat="@drawable/poster" />
 
         <androidx.constraintlayout.widget.Guideline
@@ -64,9 +66,10 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            tools:text="Comedy | 120 min"
+            android:layout_marginTop="8dp"
             app:layout_constraintEnd_toStartOf="@+id/rightGuide"
             app:layout_constraintStart_toEndOf="@+id/ivMoviePoster"
-            app:layout_constraintTop_toBottomOf="@+id/tvMovieTitle" />
+            app:layout_constraintTop_toBottomOf="@+id/tvMovieTitle"
+            tools:text="Comedy | 120 min" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
