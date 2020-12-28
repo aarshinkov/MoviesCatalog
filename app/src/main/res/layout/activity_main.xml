@@ -19,7 +19,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/header"
-            tools:srcCompat="@drawable/header" />
+            tools:srcCompat="@drawable/header"
+            android:contentDescription="Header description"/>
 
         <ImageView
             android:id="@+id/ivMoviePoster"
@@ -33,7 +34,8 @@
             app:layout_constraintTop_toBottomOf="@+id/ivMovieHeader"
             app:layout_constraintVertical_bias="0.486"
             app:srcCompat="@drawable/poster"
-            tools:srcCompat="@drawable/poster" />
+            tools:srcCompat="@drawable/poster"
+            android:contentDescription="Poster description" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/leftGuide"
@@ -84,11 +86,11 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            tools:text="Plot summary"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             app:layout_constraintEnd_toStartOf="@+id/rightGuide"
             app:layout_constraintStart_toStartOf="@+id/leftGuide"
-            app:layout_constraintTop_toBottomOf="@+id/barrierMovieHeader" />
+            app:layout_constraintTop_toBottomOf="@+id/barrierMovieHeader"
+            android:text="Plot summary" />
 
         <View
             android:id="@+id/divider"
